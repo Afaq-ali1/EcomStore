@@ -1,0 +1,145 @@
+*{
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%; 
+}
+#main
+{
+    display: flex;
+    height: 800px;
+    width: 100%;
+    color: rgb(255, 115, 0);
+}
+
+#left
+{
+    background-color: rgb(102,102,255);
+    position: relative;
+    height: 100%;
+    width: 40%;
+}
+#left #midtext {
+    background-color: rgb(215,226,243);
+    border-radius: 5px;
+    margin: 20px 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: blue;
+}
+#midtext p{
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+#midtext a{
+    opacity: .7; 
+    color: black;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 2px solid navy;
+} 
+#right
+{
+    /* display: flex; */
+    height: 100%;
+    width: 60%;
+    /* background-color: rgb(55, 0, 255); */
+} 
+#righttop
+{
+    display:flex ;
+    height: 50%;
+    width: 100%;
+    background-color: rgb(0, 255, 106);
+}
+#topright
+{
+    background-color: rgb(	151,	235	,219);
+    height: 100%;
+    width: 50%;
+}
+#topleft
+{
+    height: 100%;
+    width: 50%;
+    background-color: rgb(53, 139, 155);
+}
+#bright
+{
+    height: 50%;
+    width: 100%;
+    /* background-color: rgb(161, 10, 207); */
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+}
+#footer
+{
+
+    padding: 15px;
+    width: 100%;
+    height: 100px;
+
+}
+#cards{
+    background-image: url("shoes.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 4px;
+    height: 290px;
+    width: 188px;
+}
+.btn{
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 3px 4px;
+}
+#btn1{
+    font-size: 700;
+    color: azure;
+    background-color: #478382;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 5px;
+    cursor: pointer;
+    float: left;
+}
+#btn2{
+    font-size: 700;
+    color: white;
+    background-color: #736B6B;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 5px;
+    cursor: pointer;
+    float: right;
+}
+#lnav {
+    margin-top: 20px;
+    margin-left: 190px;
+    height: 20px;
+    width: 100%;
+}
+#lnav a{
+    font-weight: 100;
+    color: navy;
+    text-decoration: none;
+    margin: 20px 30px;
+    padding: 10px;
+}
+#lnav a:hover{
+    transition: 2s;
+    color: red;
+    border-bottom: 2px solid red;
+}

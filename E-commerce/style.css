@@ -18,36 +18,44 @@ html,body{
 
 #left
 {
-    background-color: rgb(102,102,255);
+    /* background-color: rgb(102,102,255); */
     position: relative;
     height: 100%;
-    width: 40%;
+    width: 20%;
+    /* border: 2px solid grey; */
 }
 #left #midtext {
     background-color: rgb(215,226,243);
     border-radius: 5px;
     margin: 20px 20px;
     position: absolute;
-    top: 50%;
+    top: 30%;
     transform: translateY(-50%);
-    color: blue;
-}
-#midtext p{
-    justify-content: space-between;
-    margin-bottom: 2px;
+    /* border: 2px solid navy; */
+
 }
 #midtext a{
+    display: -webkit-box;
+    justify-content: space-between;
+    line-height: 1.5;
     opacity: .7; 
     color: black;
     text-decoration: none;
     padding-bottom: 5px;
-    border-bottom: 2px solid navy;
-} 
+    /* border-bottom: 2px solid navy; */
+}
+#midtext :hover{
+    cursor: pointer;
+    color: gray;
+}
+
 #right
 {
     /* display: flex; */
     height: 100%;
-    width: 60%;
+    width: 80%;
+    /* border: 2px solid grey; */
+
     /* background-color: rgb(55, 0, 255); */
 } 
 #righttop
@@ -57,55 +65,142 @@ html,body{
     width: 100%;
     background-color: rgb(0, 255, 106);
 }
+#sale{
+    display: flex;
+}
+#salecards
+{
+    margin: 1px;
+    height: 130px;
+    width: 120px;
+    border: 2px solid darkblue;
+}
+.salecard1{
+    background-image: url("gheadphones.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.salecard2{
+    background-image: url("set.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
 #topright
 {
-    background-color: rgb(	151,	235	,219);
-    height: 100%;
-    width: 50%;
-}
-#topleft
-{
-    height: 100%;
-    width: 50%;
-    background-color: rgb(53, 139, 155);
-}
-#bright
-{
-    height: 50%;
-    width: 100%;
-    /* background-color: rgb(161, 10, 207); */
-}
-#container{
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 500px;
+    justify-content: center;
+    height: 100%;
     width: 100%;
 }
-#footer
-{
-
-    padding: 15px;
+#sale {
+    height: 200px;
     width: 100%;
-    height: 100px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: sale 5s infinite;
+  } 
 
-}
-#cards{
-    background-image: url("shoes.jpg");
+.next-button {
+    background-image: url("icons8-next-50.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+#next-left{
+    transform: rotate(180deg);
+}
+  
+  .next-button:hover {
+     background-color:  rgb(189, 184, 184); 
+  }
+  
+#container{
+    border: 2px solid blueviolet;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+}
 
+#containerHeading,h1
+{
+    left: 50%;
+    position: absolute;
+    align-self: self-start;
+    color: #1533da;
+}
+#footer
+{
+    box-sizing: border-box;
+    padding: 15px;
+    width: 100%;
+    height: auto;
+    padding: 15px 30px;
+}
+#footer a{
+    text-decoration: underline;
+    display: -webkit-box;
+    line-height: 1.5;
+    padding-bottom: 2px;
+}
+#rightfooter{
+    text-decoration: none;
+    position: absolute;
+    left: 50%;
+    transform: translateY(-126%);
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     border-radius: 4px;
     height: 290px;
     width: 188px;
+    border: 1px solid grey;
 }
-.btn{
+#card1{
+    background-image: url("shoes.jpg");
+}
+#card2{
+    background-image: url("headphones.jpg");
+    
+}
+#card3{
+    background-image: url("hoodie.jpg");
+}
+#card4{
+    background-image: url("trousers.jpg");
+}
+.cards .cardBtn{
+    width: 188px;
     font-size: 15px;
     border-radius: 5px;
     padding: 3px 4px;
 }
-#btn1{
+.cards .cardBtn:hover{
+    width: 189px;
+    color: #4f9291;
+    background-color: azure;
+}
+.cards .cardBtn{
     font-size: 700;
     color: azure;
     background-color: #478382;
@@ -113,7 +208,7 @@ html,body{
     border-radius: 4px;
     padding: 5px 5px;
     cursor: pointer;
-    float: left;
+    /* float: left; */
 }
 #btn2{
     font-size: 700;
@@ -126,20 +221,18 @@ html,body{
     float: right;
 }
 #lnav {
-    margin-top: 20px;
-    margin-left: 190px;
     height: 20px;
-    width: 100%;
+    width: auto;
+    /* border: 2px solid grey; */
 }
 #lnav a{
-    font-weight: 100;
+    font-weight: 550;
     color: navy;
     text-decoration: none;
     margin: 20px 30px;
-    padding: 10px;
 }
 #lnav a:hover{
     transition: 2s;
-    color: red;
-    border-bottom: 2px solid red;
+    color: #1533da;
+    border-bottom: 2px solid #1533da;
 }
